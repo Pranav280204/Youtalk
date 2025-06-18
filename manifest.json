@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Q&A",
+  "version": "1.0",
+  "description": "Ask questions about YouTube videos using AI.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {}
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src http://localhost:*"
+  }
+}
